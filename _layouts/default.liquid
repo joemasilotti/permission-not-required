@@ -3,6 +3,9 @@
 <head>
   {% include meta.liquid %}
   <link rel="stylesheet" href="/assets/css/main.css">
+  {% if jekyll.environment == "production" %}
+    <script src="https://cdn.usefathom.com/script.js" data-site="CESEBXNB" defer></script>
+  {% endif %}
 </head>
 <body class="antialiased">
   {% include sidebar.liquid %}
