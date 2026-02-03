@@ -1,0 +1,106 @@
+#!/usr/bin/env ruby
+require 'net/http'
+require 'uri'
+require 'rexml/document'
+require 'yaml'
+require 'date'
+require 'fileutils'
+
+FEED_URL = "https://api.riverside.fm/hosting/4vqhVeqk.rss"
+
+puts "Fetching RSS feed..."
+uri = URI.parse(FEED_URL)
+response = Net::HTTP.get_response(uri)
+
+unless response.is_a?(Net::HTTPSuccess)
+  puts "Error fetching feed: #{response.code}"
+  exit 1
+end
+
+doc = REXML::Document.new(response.body)
+episodes_dir = File.join(__dir__, '..', '_episodes')
+FileUtils.mkdir_p(episodes_dir)
+
+# Clear existing episodes
+Dir.glob(File.join(episodes_dir, '*.md')).each { |f| File.delete(f) }
+
+episode_count = 0
+episodes = []
+
+doc.elements.each('rss/channel/item') do |item|
+  title = item.elements['title']&.text
+  description = item.elements['description']&.text || item.elements['itunes:summary']&.text
+  pub_date = item.elements['pubDate']&.text
+  duration = item.elements['itunes:duration']&.text
+  enclosure = item.elements['enclosure']
+  audio_url = enclosure&.attributes['url']
+
+  next unless title && audio_url
+
+  episode_count += 1
+
+  # Parse the date
+  date = Date.parse(pub_date) rescue Date.today
+
+  # Format duration as HH:MM:SS if it's just seconds
+  if duration && duration.match?(/^\d+$/)
+    total_seconds = duration.to_i
+    hours = total_seconds / 3600
+    minutes = (total_seconds % 3600) / 60
+    seconds = total_seconds % 60
+    duration = format("%02d:%02d:%02d", hours, minutes, seconds)
+  end
+
+  # Keep HTML for proper formatting
+  html_description = description&.strip || ''
+
+  # Create plain text summary (first 2 sentences, no HTML)
+  plain_text = html_description.gsub(/<[^>]+>/, ' ').gsub(/\s+/, ' ').strip
+  sentences = plain_text.split(/(?<=[.!?])\s+/)
+  summary = sentences[0..1].join(' ').strip
+  summary = plain_text[0..200] if summary.empty?
+
+  # Create slug from title
+  slug = title.downcase.gsub(/[^a-z0-9]+/, '-').gsub(/^-|-$/, '')
+
+  episodes << {
+    number: episode_count,
+    title: title,
+    date: date,
+    slug: slug,
+    summary: summary,
+    description: html_description,
+    duration: duration,
+    audio_url: audio_url
+  }
+end
+
+# Reverse so oldest episodes have lowest numbers
+episodes.reverse!
+episodes.each_with_index do |ep, idx|
+  ep[:number] = idx + 1
+end
+
+# Write episode files
+episodes.each do |ep|
+  front_matter = {
+    'title' => ep[:title],
+    'date' => ep[:date].to_s,
+    'number' => ep[:number],
+    'duration' => ep[:duration],
+    'audio_url' => ep[:audio_url],
+    'summary' => ep[:summary]
+  }
+
+  filename = File.join(episodes_dir, "#{ep[:slug]}.md")
+  File.open(filename, 'w') do |f|
+    f.puts front_matter.to_yaml
+    f.puts "---"
+    f.puts
+    f.puts ep[:description]
+  end
+
+  puts "  Created: #{ep[:slug]}.md"
+end
+
+puts "Wrote #{episodes.length} episodes to _episodes/"

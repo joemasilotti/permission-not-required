@@ -1,0 +1,9 @@
+<section {{ include.class | prepend: 'class="' | append: '"' }}>
+  <h2 class="flex items-center font-mono text-sm/7 font-medium text-slate-900">
+    {% include tiny_waveform.liquid class="h-2.5 w-2.5" colors="fill-violet-300,fill-indigo-300" %}
+    <span class="ml-2.5">About</span>
+  </h2>
+  <p class="mt-2 text-base/7 text-slate-700">
+    {{ site.data.show.description | strip_newlines }}
+  </p>
+</section>

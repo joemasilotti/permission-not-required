@@ -1,0 +1,34 @@
+<div id="player-bar" class="hidden">
+  <div class="flex items-center gap-6 bg-white/90 px-4 py-4 shadow-sm ring-1 shadow-slate-200/80 ring-slate-900/5 backdrop-blur-sm md:px-6">
+    <div class="hidden md:block">
+      {% include player/play_button.liquid %}
+    </div>
+    <div class="mb-[env(safe-area-inset-bottom)] flex flex-1 flex-col gap-3 overflow-hidden p-1">
+      <span
+        data-player-title
+        class="truncate text-center text-sm/6 font-bold md:text-left"
+      ></span>
+      <div class="flex justify-between gap-6">
+        <div class="flex items-center md:hidden">
+          {% include player/mute_button.liquid %}
+        </div>
+        <div class="flex flex-none items-center gap-4">
+          {% include player/rewind_button.liquid %}
+          <div class="md:hidden">
+            {% include player/play_button.liquid %}
+          </div>
+          {% include player/forward_button.liquid %}
+        </div>
+        {% include player/slider.liquid %}
+        <div class="flex items-center gap-4">
+          <div class="flex items-center">
+            {% include player/playback_rate.liquid %}
+          </div>
+          <div class="hidden items-center md:flex">
+            {% include player/mute_button.liquid %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

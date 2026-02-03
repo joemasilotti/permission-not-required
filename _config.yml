@@ -1,0 +1,44 @@
+# Jekyll configuration
+url: https://nopermission.fm
+title: Permission Not Required
+description: |
+  Colleen Schnettler and Joe Masilotti didn't wait for anyone to greenlight their careers.
+  Together they talk about building wealth on your own terms: finding leverage, compounding
+  your skills, and designing careers that don't require a boss's approval.
+
+author:
+  name: Joe Masilotti
+  twitter: joemasilotti
+
+exclude:
+  - LICENSE.md
+  - README.md
+  - bin
+  - node_modules
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+  - template
+  - vendor
+
+# Collections
+collections:
+  episodes:
+    output: true
+    permalink: /:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: episodes
+    values:
+      layout: episode
+
+# Plugin configuration
+plugins:
+  - jekyll-postcss-v2
+  - jekyll-inline-svg
+postcss:
+  script: node_modules/.bin/postcss
+  config: postcss.config.js

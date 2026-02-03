@@ -1,0 +1,47 @@
+{% assign episode = include.episode %}
+<article aria-labelledby="episode-{{ episode.number }}-title" class="py-10 sm:py-12">
+  <div class="lg:px-8">
+    <div class="lg:max-w-4xl">
+      <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
+        <div class="flex flex-col items-start">
+          <h2 id="episode-{{ episode.number }}-title" class="mt-2 text-lg font-bold text-slate-900">
+            <a href="{{ episode.url }}">{{ episode.title }}</a>
+          </h2>
+          <time datetime="{{ episode.date | date: '%Y-%m-%d' }}" class="order-first font-mono text-sm/7 text-slate-500">
+            {{ episode.date | date: "%B %e, %Y" }}
+          </time>
+          <p class="mt-1 text-base/7 text-slate-700">
+            {{ episode.summary }}
+          </p>
+          <div class="mt-4 flex items-center gap-4">
+            <button
+              type="button"
+              class="flex items-center gap-x-3 text-sm/6 font-bold text-accent-600 hover:text-accent-700 active:text-accent-900"
+              data-podcast-play
+              data-episode-number="{{ episode.number }}"
+              data-episode-title="{{ episode.title }}"
+              data-audio-url="{{ episode.audio_url }}"
+              aria-label="Play episode {{ episode.title }}"
+            >
+              <svg aria-hidden="true" viewBox="0 0 10 10" class="h-2.5 w-2.5 fill-current play-icon">
+                <path d="M8.25 4.567a.5.5 0 0 1 0 .866l-7.5 4.33A.5.5 0 0 1 0 9.33V.67A.5.5 0 0 1 .75.237l7.5 4.33Z" />
+              </svg>
+              <svg aria-hidden="true" viewBox="0 0 10 10" class="h-2.5 w-2.5 fill-current pause-icon hidden">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.496 0a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H2.68a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5H1.496Zm5.82 0a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H8.5a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5H7.316Z" />
+              </svg>
+              <span aria-hidden="true">Listen</span>
+            </button>
+            <span aria-hidden="true" class="text-sm font-bold text-slate-400">/</span>
+            <a
+              href="{{ episode.url }}"
+              class="flex items-center text-sm/6 font-bold text-accent-600 hover:text-accent-700 active:text-accent-900"
+              aria-label="Show notes for episode {{ episode.title }}"
+            >
+              Show notes
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

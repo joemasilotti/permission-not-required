@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="pt-16 pb-12 sm:pb-4 lg:pt-12">
+  <div class="lg:px-8">
+    <div class="lg:max-w-4xl">
+      <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
+        <h1 class="text-2xl/7 font-bold text-slate-900">Episodes</h1>
+      </div>
+    </div>
+  </div>
+  <div class="divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100">
+    {% assign sorted_episodes = site.episodes | sort: 'date' | reverse %}
+    {% for episode in sorted_episodes %}
+      {% include episode_entry.liquid episode=episode %}
+    {% endfor %}
+  </div>
+</div>

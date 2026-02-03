@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include meta.liquid %}
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="antialiased">
+  {% include sidebar.liquid %}
+
+  <main class="border-t border-slate-200 lg:relative lg:mb-28 lg:ml-112 lg:border-t-0 xl:ml-120">
+    {% include waveform.liquid class="absolute top-0 left-0 h-20 w-full" %}
+    <div class="relative">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-slate-50 py-10 pb-40 sm:py-16 sm:pb-32 lg:hidden">
+    <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4">
+      {% include about_section.liquid %}
+      <h2 class="mt-8 flex items-center font-mono text-sm/7 font-medium text-slate-900">
+        <svg aria-hidden="true" viewBox="0 0 11 12" class="h-3 w-auto fill-slate-300">
+          <path d="M5.019 5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Zm3.29 7c1.175 0 2.12-1.046 1.567-2.083A5.5 5.5 0 0 0 5.019 7 5.5 5.5 0 0 0 .162 9.917C-.39 10.954.554 12 1.73 12h6.578Z" />
+        </svg>
+        <span class="ml-2.5">Hosted by</span>
+      </h2>
+      <div class="mt-2 flex gap-6 text-sm/7 font-bold text-slate-900">
+        {% for host in site.data.hosts %}
+          {% unless forloop.first %}<span aria-hidden="true" class="text-slate-400">/</span>{% endunless %}
+          <a href="{{ host.url }}" class="hover:text-slate-700">{{ host.name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </footer>
+
+  <div class="fixed inset-x-0 bottom-0 z-10 lg:left-112 xl:left-120">
+    {% include player/audio_player.liquid %}
+  </div>
+
+  <audio id="podcast-audio" preload="none"></audio>
+  <script src="/assets/javascripts/audio_player.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<div class="absolute inset-x-0 bottom-full flex flex-auto touch-none items-center gap-6 md:relative">
+  <label class="sr-only" for="player-slider">Current time</label>
+  <input
+    type="range"
+    id="player-slider"
+    data-player-slider
+    min="0"
+    max="0"
+    value="0"
+    class="w-full h-2 bg-slate-100 rounded-full appearance-none cursor-pointer md:rounded-full
+           [&::-webkit-slider-thumb]:appearance-none
+           [&::-webkit-slider-thumb]:w-1
+           [&::-webkit-slider-thumb]:h-4
+           [&::-webkit-slider-thumb]:rounded-full
+           [&::-webkit-slider-thumb]:bg-slate-700
+           [&::-webkit-slider-thumb]:hover:bg-slate-900
+           [&::-webkit-slider-thumb]:focus:bg-slate-900
+           [&::-moz-range-thumb]:w-1
+           [&::-moz-range-thumb]:h-4
+           [&::-moz-range-thumb]:rounded-full
+           [&::-moz-range-thumb]:bg-slate-700
+           [&::-moz-range-thumb]:border-0
+           [&::-moz-range-thumb]:hover:bg-slate-900"
+    style="background: linear-gradient(to right, rgb(51 65 85) var(--slider-progress, 0%), rgb(241 245 249) var(--slider-progress, 0%));"
+  />
+  <div class="hidden items-center gap-2 md:flex">
+    <output aria-live="off" class="rounded-md px-1 py-0.5 font-mono text-sm/6 text-slate-500" data-player-current-time>
+      0:00
+    </output>
+    <span class="text-sm/6 text-slate-300" aria-hidden="true">/</span>
+    <span class="rounded-md px-1 py-0.5 font-mono text-sm/6 text-slate-500" data-player-total-time>
+      0:00
+    </span>
+  </div>
+</div>
