@@ -1,7 +1,7 @@
 ---
 title: Laravel Cloud Envy
 date: '2026-03-10'
-number: 8
+number: 7
 duration: '00:46:00'
 audio_url: https://api.riverside.fm/hosting-analytics/media/cc7b1750864fdca39e2d4860cf45afe56a987f4fbd5b56aa45acd607c88bbed8/eyJlcGlzb2RlSWQiOiJhNGMzZjIzMi1kZTY4LTQ0NmUtYTQ5MC0zYjZiNWM5ZWRjNzgiLCJwb2RjYXN0SWQiOiI3YThlNGViYy02MWU4LTQyMWItYmUxMC03NzM4YzBjYmY3N2IiLCJhY2NvdW50SWQiOiI2OTc4ZjFjNWI1ODJjNzkyNzY1MGJhOWQiLCJwYXRoIjoibWVkaWEvY2xpcHMvNjlhZjQ2Nzc2ZmJjMmMwODE2Zjk4YmM2L2pvZS1tYXNpbG90dGlzLXN0dWRpby1jb21wb3Nlci0yMDI2LTMtOV9fMjMtMTUtMTkubXAzIn0=.mp3
 summary: Colleen deploys her first Laravel app and gushes about how Rails has nothing

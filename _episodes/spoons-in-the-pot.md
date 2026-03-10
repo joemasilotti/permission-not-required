@@ -1,7 +1,7 @@
 ---
 title: Spoons in the Pot
 date: '2026-02-24'
-number: 6
+number: 5
 duration: '00:43:43'
 audio_url: https://api.riverside.fm/hosting-analytics/media/2fe7eecdec617caadcc7d3e6a1e0657df13251cf62bcc5264de82315105e8f5e/eyJlcGlzb2RlSWQiOiJmYzc2NjVhOS04YzUyLTQ3YzEtOWIxMy02ZWQwODU2MjgxNDUiLCJwb2RjYXN0SWQiOiI3YThlNGViYy02MWU4LTQyMWItYmUxMC03NzM4YzBjYmY3N2IiLCJhY2NvdW50SWQiOiI2OTc4ZjFjNWI1ODJjNzkyNzY1MGJhOWQiLCJwYXRoIjoibWVkaWEvY2xpcHMvNjk5ZGYyZDk2N2NmMWJkNGJlN2E5ZjI5L2pvZS1tYXNpbG90dGlzLXN0dWRpby1jb21wb3Nlci0yMDI2LTItMjRfXzE5LTUwLTEubXAzIn0=.mp3
 summary: Colleen is building AI-powered SEO agents and Meta ad pipelines for clients.

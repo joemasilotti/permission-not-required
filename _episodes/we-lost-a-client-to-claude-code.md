@@ -1,7 +1,7 @@
 ---
 title: We Lost a Client to Claude Code
 date: '2026-02-09'
-number: 4
+number: 3
 duration: '00:41:32'
 audio_url: https://api.riverside.fm/hosting-analytics/media/a22a7f73f967ae74e7a98142032ac63034e0d9c38ec54540655d999a58c4f5aa/eyJlcGlzb2RlSWQiOiIwZTc4M2IwNy0wODVhLTRjZTktYTI1MC1kNzM4Y2EzM2U3MTEiLCJwb2RjYXN0SWQiOiI3YThlNGViYy02MWU4LTQyMWItYmUxMC03NzM4YzBjYmY3N2IiLCJhY2NvdW50SWQiOiI2OTc4ZjFjNWI1ODJjNzkyNzY1MGJhOWQiLCJwYXRoIjoibWVkaWEvY2xpcHMvNjk4YTM3YjY2NjJhMzkxNmUyMWQwNzFmL2pvZS1tYXNpbG90dGlzLXN0dWRpby1jb21wb3Nlci0yMDI2LTItOV9fMjAtMzgtMzAubXAzIn0=.mp3
 summary: 'Joe opens an email that confirms his biggest fear. Colleen comes back from

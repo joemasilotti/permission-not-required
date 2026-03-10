@@ -1,7 +1,7 @@
 ---
 title: When Coding Isn't Enough
 date: '2026-01-27'
-number: 2
+number: 1
 duration: '00:26:53'
 audio_url: https://api.riverside.fm/hosting-analytics/media/396d5a47595836c0d2dc2db8cea31e5f28391bf5f6d346525f338cf1b5d5b512/eyJlcGlzb2RlSWQiOiIzNmExZDdlZi1jOWUwLTQxMDYtODRjOC0xYThiYTJlODIxZTgiLCJwb2RjYXN0SWQiOiI3YThlNGViYy02MWU4LTQyMWItYmUxMC03NzM4YzBjYmY3N2IiLCJhY2NvdW50SWQiOiI2OTc4ZjFjNWI1ODJjNzkyNzY1MGJhOWQiLCJwYXRoIjoibWVkaWEvY2xpcHMvNjk3OTAxZWVkNTBkMmM4N2RhM2VhYTJkL2pvZS1tYXNpbG90dGlzLXN0dWRpby1jb21wb3Nlci0yMDI2LTEtMjdfXzE5LTIwLTMwLm1wMyJ9.mp3
 summary: 'AI is eating into the value of "just coding", so what do you do about it?

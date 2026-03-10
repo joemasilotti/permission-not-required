@@ -32,10 +32,13 @@ doc.elements.each('rss/channel/item') do |item|
   description = item.elements['description']&.text || item.elements['itunes:summary']&.text
   pub_date = item.elements['pubDate']&.text
   duration = item.elements['itunes:duration']&.text
+  episode_number = item.elements['itunes:episode']&.text&.to_i
+  episode_type = item.elements['itunes:episodeType']&.text
   enclosure = item.elements['enclosure']
   audio_url = enclosure&.attributes['url']
 
   next unless title && audio_url
+  next if episode_type == "trailer"
 
   episode_count += 1
 
@@ -64,7 +67,7 @@ doc.elements.each('rss/channel/item') do |item|
   slug = title.downcase.gsub(/[^a-z0-9]+/, '-').gsub(/^-|-$/, '')
 
   episodes << {
-    number: episode_count,
+    number: episode_number,
     title: title,
     date: date,
     slug: slug,
@@ -75,11 +78,8 @@ doc.elements.each('rss/channel/item') do |item|
   }
 end
 
-# Reverse so oldest episodes have lowest numbers
-episodes.reverse!
-episodes.each_with_index do |ep, idx|
-  ep[:number] = idx + 1
-end
+# Sort by episode number ascending
+episodes.sort_by! { |ep| ep[:number] }
 
 # Write episode files
 episodes.each do |ep|
