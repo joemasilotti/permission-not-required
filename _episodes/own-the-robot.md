@@ -3,7 +3,7 @@ title: Own the Robot
 date: '2026-03-06'
 number: 6
 duration: '00:50:30'
-audio_url: https://api.riverside.fm/hosting-analytics/media/0b7e7eb1b78d3586b412844623fe1808b6c8d6af9e37a099c019ea50778f04d9/eyJlcGlzb2RlSWQiOiJhMTJlYmVkYS04ODBhLTQ1ODgtYmQ4Zi04ZDliZjA1NTg3YTkiLCJwb2RjYXN0SWQiOiI3YThlNGViYy02MWU4LTQyMWItYmUxMC03NzM4YzBjYmY3N2IiLCJhY2NvdW50SWQiOiI2OTc4ZjFjNWI1ODJjNzkyNzY1MGJhOWQiLCJwYXRoIjoibWVkaWEvY2xpcHMvNjlhYTYzNGU0ODRiZWUwYzhhYWY0YTg0L2pvZS1tYXNpbG90dGlzLXN0dWRpby1jb21wb3Nlci0yMDI2LTMtNl9fNi0xNy0yLm1wMyJ9.mp3
+audio_url: https://api.riverside.com/hosting-analytics/media/0b7e7eb1b78d3586b412844623fe1808b6c8d6af9e37a099c019ea50778f04d9/eyJlcGlzb2RlSWQiOiJhMTJlYmVkYS04ODBhLTQ1ODgtYmQ4Zi04ZDliZjA1NTg3YTkiLCJwb2RjYXN0SWQiOiI3YThlNGViYy02MWU4LTQyMWItYmUxMC03NzM4YzBjYmY3N2IiLCJhY2NvdW50SWQiOiI2OTc4ZjFjNWI1ODJjNzkyNzY1MGJhOWQiLCJwYXRoIjoibWVkaWEvY2xpcHMvNjlhYTYzNGU0ODRiZWUwYzhhYWY0YTg0L2pvZS1tYXNpbG90dGlzLXN0dWRpby1jb21wb3Nlci0yMDI2LTMtNl9fNi0xNy0yLm1wMyJ9.mp3
 summary: Joe reveals Ruby Native ( rubynative.com ), a new product that lets Rails
   developers get their web app into the App Store without touching Xcode, Swift, or
   App Store Connect. Upload a few files, configure a YAML, click a button, and download
