@@ -30,7 +30,7 @@ This creates/updates markdown files in `_episodes/` from the Riverside RSS feed.
 ## Structure
 
 ```
-_episodes/       # Episode markdown files (generated)
+_episodes/       # Episode markdown files (auto-generated, gitignored)
 _includes/       # Liquid partials
 _layouts/        # Page layouts
 _data/           # Show metadata (show.yml, hosts.yml)
@@ -42,17 +42,13 @@ assets/
 
 ## Adding episodes
 
-Run `bin/fetch-episodes` to pull from the RSS feed, or create manually:
+Show notes are written in Riverside and pulled in via RSS. To refresh
+the local copy:
 
-```markdown
----
-title: Episode title
-date: 2026-01-27
-number: 1
-duration: "00:26:53"
-audio_url: https://...
-summary: One sentence summary.
----
-
-Full show notes here.
+```bash
+bin/fetch-episodes
 ```
+
+The script wipes `_episodes/` and rewrites it from the feed, so do not
+edit those files by hand. Anything you write there will be lost on the
+next fetch.
