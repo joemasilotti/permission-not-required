@@ -1,0 +1,13 @@
+---
+title: The First Ruby Native App I Didn't Build
+date: '2026-05-06'
+number: 12
+duration: '00:39:17'
+audio_url: https://api.riverside.com/hosting-analytics/media/844acb25b844d2dccd55d4f8a0bfae42f0e3736cb1e72e4fe893e4c892937a4e/eyJlcGlzb2RlSWQiOiJmN2I5YWJjZi1mYjg1LTRkMDYtODEwNS1mZDliYzU1ZDYzMTgiLCJwb2RjYXN0SWQiOiI3YThlNGViYy02MWU4LTQyMWItYmUxMC03NzM4YzBjYmY3N2IiLCJhY2NvdW50SWQiOiI2OTc4ZjFjNWI1ODJjNzkyNzY1MGJhOWQiLCJwYXRoIjoibWVkaWEvY2xpcHMvNjlmYTRkMjU1N2NmZTRiMTYxMzU1M2M0L2pvZS1tYXNpbG90dGlzLXN0dWRpby1jb21wb3Nlci0yMDI2LTUtNV9fMjItMy00OS5tcDMifQ==.mp3
+summary: 'Joe officially launched Ruby Native for iOS on his birthday with a 33% off
+  discount code. The launch itself was quiet, but the bigger milestone landed the
+  next morning: a developer in Turkey shipped their personal finance app to the App
+  Store using Ruby Native, never opening Xcode, never writing a line of Swift.'
+---
+
+<p>Joe officially launched Ruby Native for iOS on his birthday with a 33% off discount code. The launch itself was quiet, but the bigger milestone landed the next morning: a developer in Turkey shipped their personal finance app to the App Store using Ruby Native, never opening Xcode, never writing a line of Swift. It's the first Ruby Native app in the store that Joe didn't build himself.</p><p></p><p>Colleen pushes back on the marketing angle. The technical, craftsman framing only reaches a narrow slice of developers. The bigger TAM is indie devs trying to make money. Ruby Native unlocks B2C App Store distribution for Rails apps, and that's the pull. Joe sees how this could split the audience: hobbyists and prosumers on the $299 or $999 annual plan, businesses that need custom native code on his consulting side. The product becomes lead gen for the consulting, not a threat to it.</p><p></p><p>Colleen also shipped a free Google Ads MCP server at <a rel="noopener noreferrer nofollow" href="http://tryadwizard.com" target="_blank">tryadwizard.com</a>. It's intentionally not a product. It's lead gen for her AI consulting. Next week's episode will be a live stream where Colleen sets up a real Ruby Native ad campaign with Joe, end to end.</p><p></p><p>Joe wraps with a consulting update. Two inbound Mobile Playbook calls in the last week from longtime newsletter readers, plus a cold email reply that turned into a booked call. If all three close, a rough year turns into a normal one, just in time for baby number three in September.</p><p></p><p>Chapters</p><ul><li>00:00 Introduction and Updates</li><li>09:57 Target Market Considerations</li><li>17:02 Partnership Opportunities</li><li>23:24 Building and Using MCP Servers for Google Ads Management</li></ul>
