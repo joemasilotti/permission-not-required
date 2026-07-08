@@ -1,0 +1,11 @@
+---
+title: Reeking of AI
+date: '2026-06-17'
+number: 14
+duration: '00:41:00'
+audio_url: https://api.riverside.com/hosting-analytics/media/a93cd9915dcacc73d0549109f856c9790392308fde3656b2ff8d5bfa9899b4e9/eyJlcGlzb2RlSWQiOiJiMDJlYjM1OC03MzEyLTQ4MTQtOTkwMi00MWRjOWIwYjM0NzEiLCJwb2RjYXN0SWQiOiI3YThlNGViYy02MWU4LTQyMWItYmUxMC03NzM4YzBjYmY3N2IiLCJhY2NvdW50SWQiOiI2OTc4ZjFjNWI1ODJjNzkyNzY1MGJhOWQiLCJwYXRoIjoibWVkaWEvY2xpcHMvNmEzMTkwZWQwZDBjODc0MzczOTg5ODhhL2pvZS1tYXNpbG90dGlzLXN0dWRpby1jb21wb3Nlci0yMDI2LTYtMTZfXzIwLTctNDEubXAzIn0=.mp3
+summary: 'Colleen gets her first case study back: a client''s blog traffic jumped
+  86% from the SEO content pipeline she built. The catch is the maintenance.'
+---
+
+<p>Colleen gets her first case study back: a client's blog traffic jumped 86% from the SEO content pipeline she built. The catch is the maintenance. Every client sits on their own Hetzner box running OpenClaw, and it falls over every few weeks. Joe's pitch: stop fighting OpenClaw and make Rails the wrapper. An internal tool, single-tenant, add clients in code, and own the box.</p><p></p><p>On Joe's side, there are now four Ruby Native apps in the App Store, all running the exact same code off one config file. He's reaching back out to past Rails clients with a clever offer: hand over your source for the weekend and get a working prototype on TestFlight by Monday. Then take the code and self-serve, or pay to get it shipped. He's weighing a Ruby Weekly sponsorship and going all in on Ruby Native at RubyConf with a workshop, the hack day, and a Ruby Runway finalist spot.</p><p></p><p>They dig into why Google Ads aren't paying off in two to three months, why "go-to-market automations" beats inventing a market, and whether OpenAI ads are worth touching yet. Then Joe's confession: he leaned on AI to write, a long-time reader caught it, and he swore off AI for the actual words. The human post he wrote next hit the Hacker News front page before the admins buried it.</p><p></p><p><b>Chapters</b></p><ul><li>00:00 Family and Summer Activities</li><li>07:54 Product Development and OpenClaw Challenges</li><li>13:05 Marketing Strategies for Ruby Native</li><li>20:43 Focusing on Ruby Native at RubyConf</li><li>26:39 Colleen's Consulting Approach and Content Automation</li><li>36:12 Summer Mode and Work Schedules</li></ul>
