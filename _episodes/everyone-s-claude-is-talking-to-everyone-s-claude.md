@@ -1,0 +1,15 @@
+---
+title: Everyone's Claude is Talking to Everyone's Claude
+date: '2026-07-09'
+number: 16
+duration: '00:45:37'
+audio_url: https://api.riverside.com/hosting-analytics/media/ea01a0937debf6925c61b64bbf7a17077225cc1ce8070167e780fc44cb665663/eyJlcGlzb2RlSWQiOiJmY2NjMmIxMy1mMDFmLTRkMWYtYmQ1Ny0yZjY3Y2I5NDQzZGUiLCJwb2RjYXN0SWQiOiI3YThlNGViYy02MWU4LTQyMWItYmUxMC03NzM4YzBjYmY3N2IiLCJhY2NvdW50SWQiOiI2OTc4ZjFjNWI1ODJjNzkyNzY1MGJhOWQiLCJwYXRoIjoibWVkaWEvY2xpcHMvNmE0ZTY1YTUyMTQ5MDM2MjA5MGFhNDc2L2pvZS1tYXNpbG90dGlzLXN0dWRpby1jb21wb3Nlci0yMDI2LTctOF9fMTYtNTgtNDQubXAzIn0=.mp3
+summary: 'Joe and Colleen are back from the Fourth of July, Joe from a week on Lake
+  Tahoe and Colleen from the all-out celebration her island throws every year. Then
+  Colleen walks through a week of reflection: she wants to double down on her strengths
+  instead of shoring up her weaknesses, and she''s finally admitting she doesn''t
+  want to build an agency, even though she''s confident she could grow one to a million
+  dollars in five years.'
+---
+
+<p>Joe and Colleen are back from the Fourth of July, Joe from a week on Lake Tahoe and Colleen from the all-out celebration her island throws every year. Then Colleen walks through a week of reflection: she wants to double down on her strengths instead of shoring up her weaknesses, and she's finally admitting she doesn't want to build an agency, even though she's confident she could grow one to a million dollars in five years. It just wouldn't get her any closer to what she actually wants.</p><p></p><p>Joe is heads down for RubyConf, where he's running three Ruby Native sessions: a community hack day, a Ruby Runway finalist pitch, and a workshop. He's also wrestling with what Ruby Native even is. Is it a self-serve tool for solo developers at $299 a year, or the thing he uses to deliver higher-touch consulting? A cold lead just picked Ruby Native over a custom Hotwire Native build, turning a $25-30k, three-month project into a $15k, six-week one, and that captures how price-sensitive the whole market has gotten this year.</p><p></p><p>They close on a pattern they keep seeing: everyone generates Claude documents, and then everyone feeds those documents back into Claude to summarize, until the actual thinking gets smashed through a sieve. Write it for a human, not for an AI. Joe also turned Fable 5 loose on the Ruby Native codebase for 30 minutes and got 111 findings back, a few genuinely useful and a few completely absurd.</p><p></p><p>Chapters</p><ul><li>00:00 Vacation Stories</li><li>02:58 Journey of Self-Discovery</li><li>11:00 Agency vs. Startup</li><li>18:00 RubyConf Preparation</li><li>24:15 Pricing Strategy and Customer Segmentation</li><li>26:01 Consulting vs. Self-Serve Product</li><li>27:01 Adapting to Changing Consulting Landscape</li><li>28:01 Price Sensitivity and Client Conversations</li><li>30:14 Consulting Business Model and Future Plans</li><li>32:18 AI and Human Behavior in Document Creation</li><li>38:01 Outsourcing Thinking and Deep Reading App</li></ul>
